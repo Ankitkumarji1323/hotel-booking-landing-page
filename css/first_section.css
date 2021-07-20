@@ -1,0 +1,72 @@
+#first_section{
+    display: flex;
+    border: 0px #F5FAFE solid;
+    margin: -19px -10px 0px; 
+    background-color: #F5FAFE;
+    flex-direction: row;
+    font-family: 'Mulish', sans-serif;
+}
+.questions{
+    font-size: 10px;
+    padding: 15px 0px 10px 130px;
+}
+.call_us{
+    font-size: 10px;
+    color: grey;
+    padding: 15px 0px 10px 3px;
+}
+.gift_card{
+    font-size: 10px;
+    padding: 15px 0px 10px 3px;
+
+}
+.gift_image{
+    width: 22px;
+    height: 22px;
+    padding: 21px 16px 0px 20%;
+}
+.star_image{
+    width: 16px;
+    height: 16px;
+    padding: 22px 16px 0px 60px;
+
+}
+.star_text{
+    font-size: 10px;
+    padding: 15px 0px 10px 0px
+}
+@media(min-width: 1300px){
+    .gift_image{
+        width: 20px;
+        height: 20px;
+        padding: 22px 16px 0px 30%;
+    }
+}
+@media(min-width: 1400px){
+    .gift_image{
+        width: 20px;
+        height: 20px;
+        padding: 22px 16px 0px 35%;
+    }
+}
+@media(min-width: 1500px){
+    .gift_image{
+        width: 20px;
+        height: 20px;
+        padding: 22px 16px 0px 40%;
+    }
+}
+@media(min-width: 1600px){
+    .gift_image{
+        width: 20px;
+        height: 20px;
+        padding: 22px 16px 0px 45%;
+    }
+}
+@media(min-width: 1700px){
+    .gift_image{
+        width: 20px;
+        height: 20px;
+        padding: 22px 16px 0px 50%;
+    }
+}
