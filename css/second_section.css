@@ -1,0 +1,54 @@
+#second_section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    font-family: "Luckiest Guy", sans-serif;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.tour{
+    color: #EC1F46;
+    padding-left: 3px;
+    padding-right: 3px;
+    
+}
+.input_second{
+    height: 40px;
+    width: 350px;
+    margin-top: 13px;
+    border-radius: 10px;
+    border: 0px solid;
+    background: repeating-linear-gradient(90deg, #F5FAFE, #F5FAFE 300px, #EC1F46 300px, #EC1F46 380px);
+    margin-left: 120px;
+    padding-left: 13px;
+    font-family: 'Mulish', sans-serif;
+
+}
+.button_search{
+    margin-top: 23px;
+    margin-left: -46px;
+}
+.shop{
+    margin-left: 630px;
+    height: 24px;
+    width: 24px;
+    margin-top: 32px;
+}
+.two{
+    margin-top: 25px;
+    margin-left: -8px;
+}
+.nathan{
+    margin-top: 22px;
+    margin-left: 60px;
+}
+.name_nathan{
+    font-family: 'Mulish', sans-serif;
+    margin-left: 5px;
+    font-size: 15px;
+    margin-top: 29px;
+}
+.arrow_down{
+    margin-top: 30px;
+    margin-left: 15px;
+}
