@@ -1,0 +1,86 @@
+:root{
+    --width-image:18px;
+    --heigth-image:18px;
+}
+div{
+    display:flex;
+    justify-content: center;
+    margin-top: -7px;
+}
+.navtop{
+    background-color: #F5FAFE;
+    padding-top: 24px;
+    width: 1440px;
+    height: 60px;
+}
+.questions{
+    font-size: 10px;
+    padding-left: 9.5vw;
+}
+span{
+    color: grey;
+}
+.gift{
+    position: absolute;
+    top: 38px;
+    width: var(--width-image);
+    height: var(--heigth-image);
+    left: 66vw;
+}
+.giftparagraph{
+    position: absolute;
+    font-size: 10px;
+    left: 68.4vw;
+    top: 32px;
+
+}
+.star{
+    position: absolute;
+    width: var(--width-image);
+    height: var(--heigth-image);
+    left: 78vw;
+    top: 38px;
+}
+.Loyalty{
+    position: absolute;
+    font-size: 10px;
+    left: 80vw;
+    top: 32px;
+}
+@media(max-width: 744px){
+
+    .questions{
+        font-size: 8px;
+        padding-left: 0.5vw;
+    }
+    span{
+        color: grey;
+    }
+    .gift{
+        position: absolute;
+        top: 30px;
+        width: var(--width-image);
+        height: var(--heigth-image);
+        left: 62vw;
+    }
+    .giftparagraph{
+        position: absolute;
+        font-size: 8px;
+        left: 66vw;
+        top: 27px;
+    
+    }
+    .star{
+        position: absolute;
+        width: var(--width-image);
+        height: var(--heigth-image);
+        left: 80vw;
+        top: 30px;
+    }
+    .Loyalty{
+        position: absolute;
+        font-size: 8px;
+        left: 84vw;
+        top: 27px;
+    }
+} 

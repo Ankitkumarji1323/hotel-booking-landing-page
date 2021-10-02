@@ -1,56 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./css/first_section.css">
-        <link rel="stylesheet" href="./css/second_section.css">
+        <link rel="stylesheet" href="./css/navtop.css">    <!-- import file css for navtop-->
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@200&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <section>
-            <div id="first_section">
-                <p class="questions"><strong>Questions? Need help?</strong></p>
-                <p class="call_us">Call us on (+123) 456 1500</p>
-                <img src="./img/icons8-gift-24.png" alt="Error" class="gift_image">
-                <p class="gift_card"><strong>BTP Gift Card</strong></p>
-                <img src="./img/icons8-star-50.png" alt="star_error" class="star_image">
-                <p class="star_text"><strong>Loyalty Programm</strong></p>
-            </div>
-            <section id="second_section">
-                    <h3>BEST</h3>
-                    <h3 class="tour">TOUR</h3>
-                    <h3>PLANE</h3>
-                    <input type="text"  class="input_second" placeholder="Search Location">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="button_search">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4ZM2 11C2 6.02944 6.02944 2 11 2C15.9706 2 20 6.02944 20 11C20 15.9706 15.9706 20 11 20C6.02944 20 2 15.9706 2 11Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9429 15.9429C16.3334 15.5524 16.9666 15.5524 17.3571 15.9429L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0977 20.6834 22.0977 20.2929 21.7071L15.9429 17.3571C15.5524 16.9666 15.5524 16.3334 15.9429 15.9429Z" fill="black"/>
-                    </svg>
-                    <img src="./img/shopping-cart.png" alt="" class="shop">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="two">
-                        <circle cx="10" cy="10" r="10" fill="#EC1F46"/>
-                        <path d="M12.45 12.15V13H7.78V12.23L10.23 9.54C10.5433 9.19333 10.77 8.88 10.91 8.6C11.0567 8.31333 11.13 8.03 11.13 7.75C11.13 7.39 11.0267 7.11667 10.82 6.93C10.6133 6.73667 10.3133 6.64 9.92 6.64C9.26 6.64 8.6 6.9 7.94 7.42L7.57 6.66C7.85 6.4 8.20667 6.19333 8.64 6.04C9.07333 5.88 9.51 5.8 9.95 5.8C10.63 5.8 11.1667 5.97 11.56 6.31C11.96 6.65 12.16 7.11 12.16 7.69C12.16 8.10333 12.07 8.49667 11.89 8.87C11.71 9.23667 11.41 9.64667 10.99 10.1L9.09 12.15H12.45Z" fill="white"/>
-                    </svg>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="nathan">
-                        <circle cx="20" cy="20" r="20" fill="#F2994A"/>
-                        <circle cx="20" cy="20" r="20" fill="url(#pattern0)"/>
-                        <defs>
-                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0" transform="translate(-0.254717) scale(0.0188679)"/>
-                        </pattern>
-                        <image id="image0" width="80" height="53" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gIcSUNDX1BST0ZJTEUAAQEAAAIMbGNtcwIQAABtbnRyUkdCIFhZWiAH3AABABkAAwApADlhY3NwQVBQTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWxjbXMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApkZXNjAAAA/AAAAF5jcHJ0AAABXAAAAAt3dHB0AAABaAAAABRia3B0AAABfAAAABRyWFlaAAABkAAAABRnWFlaAAABpAAAABRiWFlaAAABuAAAABRyVFJDAAABzAAAAEBnVFJDAAABzAAAAEBiVFJDAAABzAAAAEBkZXNjAAAAAAAAAANjMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0ZXh0AAAAAElYAABYWVogAAAAAAAA9tYAAQAAAADTLVhZWiAAAAAAAAADFgAAAzMAAAKkWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPY3VydgAAAAAAAAAaAAAAywHJA2MFkghrC/YQPxVRGzQh8SmQMhg7kkYFUXdd7WtwegWJsZp8rGm/fdPD6TD////bAIQAAgICAwMDAwQEAwUFBQUFBwYGBgYHCgcIBwgHCg8KCwoKCwoPDhEODQ4RDhgTERETGBwYFxgcIh8fIispKzg4SwECAgIDAwMDBAQDBQUFBQUHBgYGBgcKBwgHCAcKDwoLCgoLCg8OEQ4NDhEOGBMRERMYHBgXGBwiHx8iKykrODhL/8AAEQgANQBQAwEiAAIRAQMRAf/EAIoAAAEEAwEBAAAAAAAAAAAAAAgABgcJAgQFAQMQAAIBAwMCBAUBCQAAAAAAAAECAwAEBQYREgchCCJBYRMUMVGBIxUWMjRSYnGRoQEAAgMBAQAAAAAAAAAAAAAABwgFBgkEAxEAAgEDAwQCAgMBAAAAAAAAAQIDAAQFERIhBgcxQRMiUWFScbLh/9oADAMBAAIRAxEAPwDC3Fdu2JBFca39K7lqO4pnZovNI9Z351XmpOwZJC0+4ItxTNwMY2SpCgTy0OsnoJGpvehpme0i1OvFcy4+HGpZ2Cj7k7UG2qevGRusjf2OltO/PC0JSe/vXe2tQ/8ATH25SEV0/FicxdYzE2mPupommvlUmNigCgbnkw7ioxwnSvU4s47m8zpug0fEwl2hPf0DJtyquz3sihwuqeBv0DVa4Y7O/wA1bWVxbPcBU+QwwybHZSdPO0gVC2Y8WXULTGUVczgcXc2xDne1LIG2+zgttt7ijx6S9UMRrnCQZPHsVDErLA7KZIXX6q4X/h9RQkdQNAY+ayEFxYSyyTLwaRW37D0JG3096Hjwqar/AHW6oLjVnb5XJM9m43GxfblG34IqIt89IsjxNMZAPqSRpof1Ul3X7Mpi8Za5K3h+GO4R5Yk372Cp5R+BzVyr1rlK9hfmK2eNBzqXJPLdS/Y8Ggtjo1SJOPVDzazA7CnZjoC7LTCsZPOoPrUv4CzBC08+VYQKTSrdFQvk7hUHOhp+4O32C0+4V8prhY23CKtOBWAFCq+n3u1PT0tjDbWsY09UI3iF09d3IxuRgvVhGNd5XSUExy/EHFQdiPoRTS0nr+6yFlf24xMRubdf0pQzRW8myF2LiQ7rx4n183pU3dZjH+w7os4XeaFD7h3A270KuMzWDbGXyC5hEEF/Esl0SzJzZdgDsu3lI+tQGSUJYXMg2mTeuzU+Pzx7qV6Bndu6mPsATFHc2LSSTlNQrKrhAdPRYCs9cZW6uoJIxJHPGBG7vFA8SHcbkIS78gN/rVdGMu7uLqVjpIJDPPHmYBF+JV2XarTdWy4mx05dSRXUc1uYeaSxkcHB7jjt70NPhh6bLqXX8mpvg72mNhPNymyvfSbgKv3KKdyapL7Zc26W8ZCOnABLBAvsk03nfa6THdscdJfXyyS21y+hk0R7jegXhR71NWZWw25f5Nb4Fe/LiNaxFCrqWNoLuZT/ACJrObGzh4Yz+qFy2bjKh9xU36duFVUqCFanzhs6EABbY1oHnLYzRcDxSodtc7Fjb9jI2gbTSiQtbpeIINbL3YHrQh9SvEjp/QUMK3hlubuZOcVpBtzZd9uTMeyrQaaq8det74yLisbj8bF6FkN1L/t9loOZApBKys3I9Dmn56fz8d3ZxyKCQRwfzVh/XrCrmNH523FykLvDzgkkkWFRPCRJH522A7iq9+l3WvF2uJtocjBDAkEMpmUqWeVgPLw2O3moRdadRNS6qvlu85mbm9cHsJW/TX2VBsq/gVOOjdS9LtQR4+HVOOawuokSF7235iO4RBsrP8P+F/v2qBuwLlZAjhSF8N7rpteqrjC53D5CLFzy7JthaNh9Q3AMg1GqDXU01r3XWX1dkpMdaI8Fo1xJIsEfaO3SRt2q5LpIMdBo7TqWnwlSOyRGVNtw0flbkB6kjc0Ay6k6NaZxznH5+1lbkeEMKSytt7+XuxoWddda5p8ta3Wnfj475Vi0VyG4XDEjY78T5U/tqt4hbyyu7iYpGElQptB5HsN/ymQ73dGdOZ3oSyibrOOfLwXSzxhF+RCm0qYQFP0A3a7jV7styjDsa0nuUT6mqjun3jh1TjBFDnrKLKwjYGZNoLgfkDi1HDpjrXp7WGMe7xF/zKKDNbuOE8JPo6fb3Hah51Xjbue7+VoTtJ8ryKT/AAfRF9HIkD6cnhlOoNcJXNZFzSpU/wA/is7NBrVb3XnLzZHWOYaU/wAs62yD7JGtQ+ncUqVL1k2LXt0Seflf/RrQTolAmGxagaD4IeP7QVg53ArTkXbfalSqHl5NEGIDitGVm3I5V8io3pUq4mqaiP1rEptXY09qPI4LIW9/YXTQzwndWX1HqrD1U+opUq8WArsiYqykEgg6giv/2Q=="/>
-                        </defs>
-                    </svg>
-                    <p class="name_nathan">Nathan</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow_down">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="black"/>
-                    </svg>
-                        
-                        
-            </section>
-        </section>
-        <main>
-
-        </main>
+         <div>
+            <nav class="navtop">
+                <p class="questions">Questions? Need Help? <span>Call us on (+123) 456 1500</span></p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="gift">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 11C4.55228 11 5 11.4477 5 12V21H19V12C19 11.4477 19.4477 11 20 11C20.5523 11 21 11.4477 21 12V22C21 22.5523 20.5523 23 20 23H4C3.44772 23 3 22.5523 3 22V12C3 11.4477 3.44772 11 4 11Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 7C1 6.44772 1.44772 6 2 6H22C22.5523 6 23 6.44772 23 7V12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12V7ZM3 8V11H21V8H3Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12.5523 6 13 6.44772 13 7V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22V7C11 6.44772 11.4477 6 12 6Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3C7.10218 3 6.72064 3.15804 6.43934 3.43934C6.15804 3.72064 6 4.10218 6 4.5C6 4.89782 6.15804 5.27936 6.43934 5.56066C6.72064 5.84196 7.10218 6 7.5 6H10.654C10.5319 5.68061 10.3774 5.32942 10.1863 4.98192C9.55732 3.83834 8.6939 3 7.5 3ZM12 7C12.9806 6.80388 12.9805 6.80354 12.9804 6.80318L12.9799 6.80038L12.9788 6.79503L12.9754 6.77893C12.9727 6.76583 12.9688 6.74805 12.9639 6.72588C12.954 6.68157 12.9396 6.61965 12.9203 6.54262C12.8819 6.38877 12.8237 6.17343 12.7424 5.91686C12.581 5.40732 12.3233 4.71734 11.9387 4.01808C11.1927 2.66166 9.8061 1 7.5 1C6.57174 1 5.6815 1.36875 5.02513 2.02513C4.36875 2.6815 4 3.57174 4 4.5C4 5.42826 4.36875 6.3185 5.02513 6.97487C5.6815 7.63125 6.57174 8 7.5 8H12C12.2996 8 12.5834 7.86568 12.7733 7.63399C12.9633 7.4023 13.0392 7.09696 12.9804 6.80318L12 7Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0613 4.01808C12.8073 2.66166 14.1939 1 16.5 1C17.4283 1 18.3185 1.36875 18.9749 2.02513C19.6313 2.6815 20 3.57174 20 4.5C20 5.42826 19.6313 6.3185 18.9749 6.97487C18.3185 7.63125 17.4283 8 16.5 8H12C11.7004 8 11.4166 7.86568 11.2267 7.63399C11.0367 7.4023 10.9607 7.09766 11.0194 6.80388L12 7C11.0194 6.80388 11.0193 6.80424 11.0194 6.80388L11.0197 6.80236L11.0201 6.80038L11.0212 6.79503L11.0246 6.77893C11.0273 6.76583 11.0312 6.74805 11.0361 6.72588C11.046 6.68157 11.0604 6.61965 11.0797 6.54262C11.1181 6.38877 11.1763 6.17343 11.2576 5.91686C11.419 5.40732 11.6767 4.71734 12.0613 4.01808ZM13.346 6H16.5C16.8978 6 17.2794 5.84196 17.5607 5.56066C17.842 5.27936 18 4.89782 18 4.5C18 4.10218 17.842 3.72064 17.5607 3.43934C17.2794 3.15804 16.8978 3 16.5 3C15.3061 3 14.4427 3.83834 13.8137 4.98192C13.6226 5.32942 13.4681 5.68061 13.346 6ZM12.9802 7.1978C12.9802 7.19812 12.9802 7.19807 12.9802 7.1978V7.1978Z" fill="black"/>
+                </svg>
+                <p class="giftparagraph">BTP Gift Card</p>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="star">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C11.3806 0 11.7282 0.216072 11.8967 0.557376L14.7543 6.34647L21.1446 7.28051C21.5212 7.33555 21.8339 7.59956 21.9512 7.96157C22.0686 8.32358 21.9703 8.72083 21.6977 8.98636L17.0745 13.4894L18.1656 19.851C18.23 20.2261 18.0757 20.6053 17.7677 20.8291C17.4598 21.0528 17.0515 21.0823 16.7145 20.9051L11 17.8998L5.28545 20.9051C4.94853 21.0823 4.54024 21.0528 4.23226 20.8291C3.92429 20.6053 3.77004 20.2261 3.83439 19.851L4.92548 13.4894L0.302266 8.98636C0.0296477 8.72083 -0.0686251 8.32358 0.0487526 7.96157C0.16613 7.59956 0.47881 7.33555 0.85537 7.28051L7.24574 6.34647L10.1033 0.557376C10.2718 0.216072 10.6194 0 11 0ZM11 3.25925L8.80671 7.70262C8.66117 7.99747 8.37998 8.20193 8.05463 8.24949L3.14841 8.9666L6.69773 12.4236C6.93361 12.6534 7.04127 12.9845 6.98561 13.309L6.14818 18.1917L10.5345 15.8849C10.8259 15.7317 11.1741 15.7317 11.4655 15.8849L15.8518 18.1917L15.0144 13.309C14.9587 12.9845 15.0664 12.6534 15.3023 12.4236L18.8516 8.9666L13.9454 8.24949C13.62 8.20193 13.3388 7.99747 13.1933 7.70262L11 3.25925Z" fill="black"/>
+                </svg>
+        </div>
+                <p class="Loyalty">Loyalty Program</p>
+                <div class="navbar">
+                    <h3 class="titlenavbar">Best tour plan</h3>
+                     <input type="text" class="input">  
+                </div>
+            </nav>
     </body>
 </html>

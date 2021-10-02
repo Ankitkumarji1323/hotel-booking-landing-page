@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.titlenavbar{
+    position: relative;
+    left: 12vw;
+    font-family: "Luckiest Guy", "sans-serif";
+}
+.input{
+    position: relative;
+    border-radius: 9px 0px 0px 9px;
+    border: 0px;
+    background-color: aliceblue;
+}
